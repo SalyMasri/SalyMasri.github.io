@@ -6,6 +6,15 @@
 📄 [Download My CV (PDF)](/assets/cv/Saly_Al_Masri_CV.pdf)
 
 ---
+## About Me 🌟
+
+🌍 **I moved to Sweden from Syria when I was 14**, swapping ☀️ warm weather for ❄️ snow and figuring out how to adapt to a whole new life. Growing up in a big family during tough times taught me two things: how to work with others (even when they steal your snacks 🍪) and how to laugh 😂, no matter what’s happening around you.  
+
+🎓 **Now, I’m in my fourth year of studying Civilingenjör (M.Eng) in Computer Science and Engineering (Datateknik) at KTH.** Balancing a new language 🗣️, a new culture 🌏, and academic challenges 📚 wasn’t easy, but it made me determined to get things done and do them well.  
+
+💡 I’m the person who brings energy ⚡ to the room, loves finding creative solutions 🧩, and knows how to make teamwork actually work 🤝 (bonus: I’ll probably make you laugh along the way 😂). Life’s too short to take everything too seriously—but I’m serious about delivering results ✅ and growing in everything I do.
+
+---
 
 ### Technical Skills  
 **Languages & Tools**: Python, SQL, AWS, Snowflake, MATLAB, Wireshark, Docker, GDB  
