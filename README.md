@@ -3,7 +3,7 @@
 🌐 [LinkedIn](https://www.linkedin.com/in/saly-almasri)  
 📧 [Email Me](mailto:sally.masre.246@gmail.com)  
 📞 [Call Me](tel:+46760264578)  
-📄 [Download My CV (PDF)](/assets/cv/Saly_Al_Masri_CV.pdf)
+📄 [Download My CV in Swedish (PDF)](/files/CV_SI.pdf)
 
 ---
 ## About Me 🌟
