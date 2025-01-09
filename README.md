@@ -1,5 +1,5 @@
 # Saly Masri
-## (_Computer Engineer_)
+## _Computer Engineer_
 🌐 [LinkedIn](https://www.linkedin.com/in/saly-almasri)  
 📧 [Email Me](mailto:sally.masre.246@gmail.com)  
 📞 [Call Me](tel:+46760264578)  
