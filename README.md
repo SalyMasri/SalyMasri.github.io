@@ -1,7 +1,6 @@
 ![Profile Picture](/assets/img/profile_picture.jpg)
 
-# Saly Al Masri  
-**Master’s Student in Computer Engineering**  
+#Computer Engineer  
 [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile) | [Email Me](sally.masre.246@gmail.com) | +46 76-026-4578
 [Download My CV (PDF)](/assets/cv/Saly_Al_Masri_CV.pdf)
 
