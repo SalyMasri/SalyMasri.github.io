@@ -1,6 +1,6 @@
 
 # Computer Engineer  
-[LinkedIn]([https://www.linkedin.com/in/your-linkedin-profile](https://www.linkedin.com/in/saly-almasri-277abb158) | [Email Me](sally.masre.246@gmail.com) | 
+[LinkedIn]([https://www.linkedin.com/in/saly-almasri-277abb158]) | [Email Me](sally.masre.246@gmail.com) | 
 📞 [Call Me](tel:+46760264578) |
 [Download My CV (PDF)](/assets/cv/Saly_Al_Masri_CV.pdf)
 
