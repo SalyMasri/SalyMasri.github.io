@@ -1,6 +1,6 @@
-title: Saly Al Masri
-logo: /files/bunny.gif
+title: Saly Masri
+#logo: /files/bunny.gif
 #description: below image
-#show_downloads: true
+show_downloads: true
 theme: jekyll-theme-Cayman
-custom_css: /files/style.css
+#custom_css: /files/style.css
