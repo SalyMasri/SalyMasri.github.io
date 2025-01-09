@@ -1,7 +1,7 @@
-![Profile Picture](/assets/img/profile_picture.jpg)
 
-#Computer Engineer  
-[LinkedIn](https://www.linkedin.com/in/your-linkedin-profile) | [Email Me](sally.masre.246@gmail.com) | +46 76-026-4578
+# Computer Engineer  
+[LinkedIn]([https://www.linkedin.com/in/your-linkedin-profile](https://www.linkedin.com/in/saly-almasri-277abb158) | [Email Me](sally.masre.246@gmail.com) | ### 
+📞 [Call Me](tel:+46760264578)
 [Download My CV (PDF)](/assets/cv/Saly_Al_Masri_CV.pdf)
 
 ---
@@ -27,14 +27,14 @@ Developed and implemented AI solutions using reinforcement learning, probabilist
 
 - **Key Features**: Reinforcement learning (Q-learning), probabilistic inference (HMMs), and optimization (minimax, alpha-beta pruning).  
 - **Tools Used**: Python, NumPy, custom simulation frameworks.  
-- [View Code](https://github.com/your-repo-link) | ![AI Project Visualization](/assets/img/ai_project.jpeg)
+- [View Code](https://github.com/SalyMasri/Artificial-Intelligence) | ![AI Project Visualization](/assets/img/ai_project.jpeg)
 
 ### Data Communication and Protocols: Network Design and Analysis
 Implemented and analyzed network protocols and DNS configurations, focusing on ARP, IP, UDP, TCP, and DNS.
 
 - **Key Features**: Configured networks, analyzed traffic with Wireshark, conducted performance testing, and visualized congestion control.  
 - **Tools Used**: Wireshark, BIND, ttcp, dig, Linux utilities, VirtualBox.  
-- [View Code and Configurations](https://github.com/your-repo-link) | ![Network Protocols Visualization](/assets/img/network_protocols.jpeg)
+- [View Code and Configurations](https://github.com/SalyMasri/Protocols-and-Principles-of-the-Internet) | ![Network Protocols Visualization](/assets/img/network_protocols.jpeg)
 
 ### Computer Security: Analyzing and Mitigating Vulnerabilities
 Hands-on experience in identifying, exploiting, and mitigating security vulnerabilities across web applications, encryption, memory exploitation, and advanced attacks.
