@@ -1,6 +1,6 @@
 # Saly Masri
 ## _Computer Engineer_
-🌐 [LinkedIn](https://www.linkedin.com/in/saly-almasri)  
+🌐 [LinkedIn](www.linkedin.com/in/saly-masri-277abb158)  
 📧 [Email Me](mailto:sally.masre.246@gmail.com)  
 📞 [Call Me](tel:+46760264578)  
 📄 [Download My CV in Swedish (PDF)](/files/CV_SI.pdf)
