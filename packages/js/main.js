@@ -67,29 +67,25 @@ tabs.forEach((tab) => {
     tab.classList.add("qualification__active");
   });
 });
-/*==================== QUALIFICATIONS MODAL ====================*/
-const modalViews = document.querySelectorAll(".qualifications__modal"),
-  modalBtns = document.querySelectorAll(".qualifications__button"),
-  modalCloses = document.querySelectorAll(".qualifications__modal-close");
 
+/*==================== SERVICES TAB SWITCHING ====================*/
+const servicesTabs = document.querySelectorAll(".services__button"),
+      servicesSections = document.querySelectorAll(".services__content");
 
-let modal = function (modalClick) {
-  modalViews[modalClick].classList.add("active-modal");
-};
+servicesTabs.forEach((tab, i) => {
+  tab.addEventListener("click", () => {
+    // Remove active class from all sections and buttons
+    servicesSections.forEach((section) => section.classList.remove("services__active"));
+    servicesTabs.forEach((btn) => btn.classList.remove("services__active"));
 
-modalBtns.forEach((modalBtn, i) => {
-  modalBtn.addEventListener("click", () => {
-    modal(i);
+    // Add active class to clicked section and button
+    servicesSections[i].classList.add("services__active");
+    tab.classList.add("services__active");
   });
 });
 
-modalCloses.forEach((modalClose) => {
-  modalClose.addEventListener("click", () => {
-    modalViews.forEach((modalView) => {
-      modalView.classList.remove("active-modal");
-    });
-  });
-});
+
+
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper(".portfolio__container", {

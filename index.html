@@ -87,21 +87,28 @@
             
                         <div class="home__img">
                             <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Masking Shape -->
                                 <mask id="mask0" mask-type="alpha">
                                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                     130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                                     97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
                                     0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
                                 </mask>
+                                
                                 <g mask="url(#mask0)">
+                                    <!-- Background Shape -->
                                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home__blob-img" x="" xlink:href="packages/images/saly-masri.jpeg"/>
+                                    
+                                    <!-- Updated Image with Correct Sizing and Positioning -->
+                                    <image class="home__blob-img" x="5" y="10" width="160" height="160" xlink:href="packages/images/saly-masri.png"/>
+
                                 </g>
                             </svg>
                         </div>
+                        
             
                         <div class="home__data">
                             <h1 class="home__title">Hi, I'm Saly Masri</h1>
@@ -131,7 +138,7 @@
                 <span class="section__subtitle">My Introduction</span>
             
                 <div class="about__container container grid">
-                    <img src="packages/images/saly-masri.jpeg" alt="Saly Masri" class="about__img">
+                    <img src="packages/images/saly-masri.png" alt="Saly Masri" class="about__img">
                     <div class="about__data">
                         <p class="about__description">
                             I'm Saly Masri, a Computer Science Engineering master's student at KTH. 
@@ -240,272 +247,286 @@
             </section>
             
 
-              <!--==================== QUALIFICATION ====================-->
-        <section class="qualification__section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My personal journey</span>
+        <!--==================== QUALIFICATION ====================-->
+<section class="qualification__section">
+    <h2 class="section__title">Qualification</h2>
+    <span class="section__subtitle">My personal journey</span>
 
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
-                    </div>
+    <div class="qualification__container container">
+        <div class="qualification__tabs">
+            <div class="qualification__button button--flex qualification__active" data-target="#education">
+                <i class="uil uil-graduation-cap qualification__icon"></i>
+                Education
+            </div>
+    
+            <div class="qualification__button button--flex" data-target="#work">
+                <i class="uil uil-briefcase-alt qualification__icon"></i>
+                Work
+            </div>
+        </div>
+
+        <!-- Qualification Sections Wrapper -->
+        <div class="qualification__sections">
             
-                    <div class="qualification__button button--flex" data-target="#work">
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Work
+            <!--==================== EDUCATION CONTENT ====================-->
+            <div class="qualification__content qualification__active" data-content id="education">
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">Master of Science in Engineering, Computer Science</h3>
+                        <span class="qualification__subtitle">KTH Royal Institute of Technology</span>
+                        <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2021 - Expected 2026
+                        </div>
+                    </div>
+    
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
                     </div>
                 </div>
-            
-                <div class="qualification__sections">
-                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!--==================== QUALIFICATION 1 ====================--> 
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Master of Science in Engineering, Computer Science</h3>
-                                <span class="qualification__subtitle">KTH Royal Institute of Technology</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2021 - Expected 2026
-                                </div>
-                            </div>
-            
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-            
-                        <!--==================== QUALIFICATION 2 ====================--> 
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                            </div>
-            
-                            <div>
-                                <h3 class="qualification__title">Bachelor of Science, Analytical Finance</h3>
-                                <span class="qualification__subtitle">Mälardalens University</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2019 - June 2021
-                                </div>
-                            </div>
+
+                <div class="qualification__data">
+                    <div></div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                    </div>
+    
+                    <div>
+                        <h3 class="qualification__title">Bachelor of Science, Analytical Finance</h3>
+                        <span class="qualification__subtitle">Mälardalens University</span>
+                        <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2019 - June 2021
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!--==================== WORK EXPERIENCE CONTENT ====================-->
+            <div class="qualification__content" data-content id="work">
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">Software Developer</h3>
+                        <span class="qualification__subtitle">Freelance</span>
+                        <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2023 - 2024
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                </div>
+
+                <div class="qualification__data">
+                    <div class="qualification__empty"></div> 
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="qualification__title">Tutor / Teacher</h3>
+                        <span class="qualification__subtitle">Stiftelsen Läxhjälpen</span>
+                        <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2022 - Present
+                        </div>
+                    </div>
+                </div>
+
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">Interviewer</h3>
+                        <span class="qualification__subtitle">Gullers Grupp AB</span>
+                        <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2023 - 2024
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                </div>
+
+                <div class="qualification__data">
+                    <div></div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="qualification__title">Tutor / Teacher</h3>
+                        <span class="qualification__subtitle">NTI Gymnasiet Skövde</span>
+                        <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2020 - 2021
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End of qualification__sections -->
+    </div> <!-- End of qualification__container -->
+</section>
+
+      <!--==================== SERVICES SECTION ====================-->
+<section class="services section" id="services">
+    <h2 class="section__title">Services</h2>
+    <span class="section__subtitle">My professional journey</span>
+
+    <!-- Tabs for Education & Work -->
+    <div class="services__tabs">
+        <div class="services__button button--flex services__active" data-target="#education">
+            <i class="uil uil-graduation-cap services__icon"></i>
+            Education
+        </div>
+        <div class="services__button button--flex" data-target="#work">
+            <i class="uil uil-briefcase-alt services__icon"></i>
+            Work Experience
+        </div>
+    </div>
+
+    <div class="services__container container">
+        <!--==================== EDUCATION CONTENT ====================-->
+        <div class="services__content services__active" id="education">
+            <div class="services__grid">
+                <!--==================== EDUCATION 1 ====================-->
+                <div class="services__card">
+                    <i class="uil uil-graduation-cap services__icon"></i>
+                    <h3 class="services__title">KTH Royal Institute of Technology</h3>
+                    <p>Master of Science in Engineering, Computer Science<br>2021 - Expected 2026</p>
+                    <details>
+                        <summary class="services__summary">Courses Taken</summary>
+                        <ul class="services__list">
+                            <li>High-voltage Engineering</li>
+                            <li>Artificial Neural Networks and Deep Architectures</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Computer Security</li>
+                            <li>Protocols and Principles of the Internet</li>
+                            <li>Deep Learning in Data Science</li>
+                            <li>Machine Learning</li>
+                            <li>TCP/IP Internetworking</li>
+                            <li>Web Programming</li>
+                            <li>Theory of Programming Languages</li>
+                            <li>Operating Systems</li>
+                            <li>Application Development in Java</li>
+                            <li>Academic Writing and Scientific Method</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Circuit Theory and Electronics</li>
+                            <li>Discrete Mathematics A</li>
+                            <li>Programming Methodology</li>
+                            <li>Multimedia and Communication Systems</li>
+                            <li>Databases - Modelling and Implementing</li>
+                            <li>Introduction to Embedded System Programming</li>
+                            <li>Human-Computer Interaction</li>
+                            <li>Object-Based Programming</li>
+                            <li>Digital Electronics with VHDL</li>
+                            <li>Cryptography</li>
+                        </ul>
+                    </details>
+                </div>
+        
+                <!--==================== EDUCATION 2 ====================-->
+                <div class="services__card">
+                    <i class="uil uil-university services__icon"></i>
+                    <h3 class="services__title">Mälardalens University</h3>
+                    <p>Bachelor of Science, Analytical Finance<br>2019 - June 2021</p>
+                    <details>
+                        <summary class="services__summary">Courses Taken</summary>
+                        <ul class="services__list">
+                            <li>International Trade Theory</li>
+                            <li>Macroeconomic Principles</li>
+                            <li>Management Accounting</li>
+                            <li>Introduction to Financial Mathematics</li>
+                            <li>Financial Accounting</li>
+                            <li>Applied Microeconomics</li>
+                            <li>Methods of Statistical Inference</li>
+                            <li>Probability</li>
+                            <li>Numerical Methods with MATLAB</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+        </div>
+        
+
+      <!--==================== WORK EXPERIENCE CONTENT ====================-->
+<div class="services__content" id="work">
+    <div class="services__grid">
+        <!--==================== WORK 1: Freelance ====================-->
+        <div class="services__card">
+            <i class="uil uil-laptop services__icon"></i>
+            <h3 class="services__title">Freelance</h3>
+            <p>Software Developer</p>
+            <details>
+                <summary class="services__summary">View Details</summary>
+                <ul class="services__list">
+                    <li>Developed financial software that reduced project evaluation time from 2-3 months to 1-2 weeks.</li>
+                    <li>Built an interactive UI and backend using Python, SQLite, and PostgreSQL for efficient data management.</li>
+                    <li>Implemented advanced search and sorting algorithms (Hash Map, B+ Tree, Trie) for rapid data retrieval.</li>
+                    <li>Optimized performance with Redis Cache, indexing, and parallel processing.</li>
+                </ul>
+            </details>
+        </div>
+
+        <!--==================== WORK 2: Stiftelsen Läxhjälpen ====================-->
+        <div class="services__card">
             
-            
-            <!--==================== QUALIFICATION CONTENT 2 ====================-->
-<div class="qualification__content" data-content id="work">
-    <!--==================== QUALIFICATION 1 ====================--> 
-    <div class="qualification__data">
-        <div>
-            <h3 class="qualification__title">Software Developer</h3>
-            <span class="qualification__subtitle">Freelance</span>
-            <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i>
-                2023 - 2024
-            </div>
+            <i class="uil uil-book services__icon"></i>
+            <h3 class="services__title">Stiftelsen Läxhjälpen</h3>
+            <p>Tutor / Teacher</p>
+            <details>
+                <summary class="services__summary">View Details</summary>
+                <ul class="services__list">
+                    <li>Provided personalized tutoring in mathematics and science, helping students overcome academic challenges.</li>
+                    <li>Developed adaptive study plans tailored to students' learning styles.</li>
+                    <li>Improved communication skills by simplifying complex concepts.</li>
+                    <li>Built students' confidence through structured learning support.</li>
+                </ul>
+            </details>
         </div>
 
-        <div>
-            <span class="qualification__rounder"></span>
-            <span class="qualification__line"></span>
-        </div>
-    </div>
-
-    <!--==================== QUALIFICATION 2 ====================--> 
-    <div class="qualification__data">
-        <div></div>
-        <div>
-            <span class="qualification__rounder"></span>
-            <span class="qualification__line"></span>
-        </div>
-
-        <div>
-            <h3 class="qualification__title">Tutor / Teacher</h3>
-            <span class="qualification__subtitle">Stiftelsen Läxhjälpen</span>
-            <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i>
-                2022 - Present
-            </div>
-        </div>
-    </div>
-
-    <!--==================== QUALIFICATION 3 ====================--> 
-    <div class="qualification__data">
-        <div>
-            <h3 class="qualification__title">Interviewer</h3>
-            <span class="qualification__subtitle">Gullers Grupp AB</span>
-            <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i>
-                2023 - 2024
-            </div>
+        <!--==================== WORK 3: Gullers Grupp AB ====================-->
+        <div class="services__card">
+            <i class="uil uil-microphone services__icon"></i>
+            <h3 class="services__title">Gullers Grupp AB</h3>
+            <p>Interviewer</p>
+            <details>
+                <summary class="services__summary">View Details</summary>
+                <ul class="services__list">
+                    <li>Conducted interviews and gathered precise data for a social science research study.</li>
+                    <li>Enhanced interpersonal skills by engaging with diverse individuals.</li>
+                    <li>Practiced adaptability in unexpected interview situations.</li>
+                    <li>Improved active listening for accurate data collection.</li>
+                </ul>
+            </details>
         </div>
 
-        <div>
-            <span class="qualification__rounder"></span>
-            <span class="qualification__line"></span>
-        </div>
-    </div>
-
-    <!--==================== QUALIFICATION 4 ====================--> 
-    <div class="qualification__data">
-        <div></div>
-        <div>
-            <span class="qualification__rounder"></span>
-        </div>
-
-        <div>
-            <h3 class="qualification__title">Tutor / Teacher</h3>
-            <span class="qualification__subtitle">NTI Gymnasiet Skövde</span>
-            <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i>
-                2020 - 2021
-            </div>
+        <!--==================== WORK 4: NTI Gymnasiet Skövde ====================-->
+        <div class="services__card">
+            <i class="uil uil-book services__icon"></i>
+            <h3 class="services__title">NTI Gymnasiet Skövde</h3>
+            <p>Tutor / Teacher</p>
+            <details>
+                <summary class="services__summary">View Details</summary>
+                <ul class="services__list">
+                    <li>Provided guidance and support to high school students in computer science and programming.</li>
+                    <li>Ensured explanations were clear and resources were reliable.</li>
+                    <li>Helped students prepare for their final exams with structured learning plans.</li>
+                </ul>
+            </details>
         </div>
     </div>
 </div>
 
-            </div>
-        </section>
-      
-        <!--==================== Qualifications ====================-->
-        <section class="qualifications section" id="qualifications">
-            <h2 class="section__title">qualifications</h2>
-            <span class="section__subtitle">What I offer</span>
 
-            <div class="services__container container grid">
-        <!--==================== SERVICES 1 ====================-->  
-        <div class="services__content">
-            <div>
-                <i class="uil uil-analytics skills__icon"></i>
-                <h3 class="services__title">Data Analyst<br></h3>
-            </div>
-            <span class="button button--flex button--small button--link services__button">
-                View more
-                <i class="uil uil-arrow-right button__icon"></i>
-            </span>
 
-            <div class="services__modal">
-                <div class="services__modal-content">
-                    <h4 class="services__modal-title">Data Analyst <br></h4>
-                    <i class="uil uil-times services__modal-close"></i>
-
-                    <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>I analize data systems.</p>
-                        </li>
-
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Automating information retrieval.</p>
-                        </li>
-
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Systematically applying statistical and logical techniques.</p>
-                        </li>
-
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Visualizing graphs, charts and preparing reports and dashboards.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>  
-        
-        <!--==================== SERVICES 2 ====================--> 
-        <div class="services__content">
-            <div>
-                <i class="uil uil-money-bill skills__icon"></i>
-                <h3 class="services__title">Banker<br> </h3>
-            </div>
-            <span class="button button--flex button--small button--link services__button">
-                View more
-                <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-
-            <div class="services__modal">
-                <div class="services__modal-content">
-                    <h4 class="services__modal-title">Banker<br></h4>
-                    <i class="uil uil-times services__modal-close"></i>
-
-                    <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Assiting both personal and commercial clients with financial questions and needs.</p>
-                        </li>
-
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Maintain customer acoounts and help resolve disputes.</p>
-                        </li>
-
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Refer customers to loan officers or other financial specialist.</p>
-                        </li>
-
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Systematically applying statistical and logical techniques.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>  
-       
-        <!--==================== SERVICES 3 ====================-->
-        <div class="services__content">
-            <div>
-                <i class="uil uil-arrow services__icon"></i>
-                <h3 class="services__title">Web Developer<br></h3>
-            </div>
-            <span class="button button--flex button--small button--link services__button">
-                View more
-                <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-
-            <div class="services__modal">
-                <div class="services__modal-content">
-                    <h4 class="services__modal-title">Web  Developer<br></h4>
-                    <i class="uil uil-times services__modal-close"></i>
-
-                    <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>I develop the user interface.</p>
-                        </li>
-
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Webpage development.</p>
-                        </li>
-
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>I create Ux element interactions.</p>
-                        </li>
-
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Well trained in WordPress.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div> 
-  
-       
-        </div>
-        </section>
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
 
@@ -515,53 +536,91 @@
             <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
         <!--==================== PORTFOLIO 1 ====================-->
-        
-            <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/portfolio1.jpg" alt="" class="portfolio__img">
-
-                <div class="portfolio_">
-                    <h3 class="portfolio__title">Modern Dashboard</h3>
-                    <p class="portfolio__description">Data analitical dashboard adaptable to all devices, 
-                        with ui components and animated interactions.</p>
-                    <a href="#" class="button button--flex button--small portfolio__button">
-                        Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
-                </div>
+       
+        <!--==================== PROJECT 1 ====================-->
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/AntonsSkafferi.png" alt="Antons Skafferi" class="portfolio__img">
+            <div class="portfolio__data">
+                <h3 class="portfolio__title">Antons Skafferi - Full Stack Development</h3>
+                <p class="portfolio__description">A Jakarta EE-based restaurant management system with an admin dashboard, customer website, restaurant app, and kitchen app.</p>
+                <a href="https://github.com/SalyMasri/Java" class="button button--flex button--small portfolio__button">
+                    View Code <i class="uil uil-arrow-right button__icon"></i>
+                </a>
             </div>
+        </div>
 
-            <!--==================== PORTFOLIO 2 ====================-->
-        
-            <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/portfolio3.PNG" alt="" class="portfolio__img">
-
-                <div class="portfolio_">
-                    <h3 class="portfolio__title">E-Commerce website</h3>
-                    <p class="portfolio__description">Above Amazon clone is adaptable to all devices, with 
-                        ui components and animated interactions.</p>
-                    <a href="#" class="button button--flex button--small portfolio__button">
-                        Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
-                </div>
+        <!--==================== PROJECT 2 ====================-->
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/HMM.jpg" alt="Hidden Markov Models" class="portfolio__img">
+            <div class="portfolio__data">
+                <h3 class="portfolio__title">Hidden Markov Models: Forward & Viterbi</h3>
+                <p class="portfolio__description">Implemented probabilistic sequence analysis using Forward and Viterbi algorithms to model hidden states.</p>
+                <a href="https://github.com/SalyMasri/HMM" class="button button--flex button--small portfolio__button">
+                    View Code <i class="uil uil-arrow-right button__icon"></i>
+                </a>
             </div>
+        </div>
 
-            <!--==================== PORTFOLIO 3 ====================-->
-        
-            <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/portfolio2.png" alt="" class="portfolio__img">
-
-                <div class="portfolio_">
-                    <h3 class="portfolio__title">Brand Design</h3>
-                    <p class="portfolio__description">Tesla Clone is adaptable to all devices, with 
-                        ui components and animated interactions.</p>
-                    <a href="#" class="button button--flex button--small portfolio__button">
-                        Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
-                </div>
+        <!--==================== PROJECT 3 ====================-->
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/default.png" alt="RBF Networks" class="portfolio__img">
+            <div class="portfolio__data">
+                <h3 class="portfolio__title">RBF Networks & Competitive Learning</h3>
+                <p class="portfolio__description">Explored function approximation, clustering, and adaptive learning using RBF networks, competitive learning, and self-organizing maps.</p>
+                <a href="https://github.com/SalyMasri/RBF_CL_SOM" class="button button--flex button--small portfolio__button">
+                    View Code <i class="uil uil-arrow-right button__icon"></i>
+                </a>
             </div>
-                </div>
+        </div>
+
+        <!--==================== PROJECT 4 ====================-->
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/default.png" alt="Hopfield Networks" class="portfolio__img">
+            <div class="portfolio__data">
+                <h3 class="portfolio__title">Hopfield Networks & Associative Memory</h3>
+                <p class="portfolio__description">Investigated pattern completion, noise resistance, and energy-based convergence in Hopfield networks.</p>
+                <a href="https://github.com/SalyMasri/HopfieldNetworks" class="button button--flex button--small portfolio__button">
+                    View Code <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+            </div>
+        </div>
+
+        <!--==================== PROJECT 5 ====================-->
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/default.png" alt="SVMs & Kernel Tricks" class="portfolio__img">
+            <div class="portfolio__data">
+                <h3 class="portfolio__title">Support Vector Machines (SVMs) & Kernel Tricks</h3>
+                <p class="portfolio__description">Explored the effectiveness of different SVM kernels for classification and generalization.</p>
+                <a href="https://github.com/SalyMasri/Support_Vector_Machine" class="button button--flex button--small portfolio__button">
+                    View Code <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+            </div>
+        </div>
+
+        <!--==================== PROJECT 6 ====================-->
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/default.png" alt="Security Assignments" class="portfolio__img">
+            <div class="portfolio__data">
+                <h3 class="portfolio__title">Security Assignments – Hashing, Exploitation, Malware & Attacks</h3>
+                <p class="portfolio__description">Implemented cryptographic attacks, buffer overflows, and malware detection techniques.</p>
+                <a href="https://github.com/SalyMasri/Computer-Security" class="button button--flex button--small portfolio__button">
+                    View Code <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+            </div>
+        </div>
+
+        <!--==================== PROJECT 7 ====================-->
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/default.png" alt="DNS & TCP Analysis" class="portfolio__img">
+            <div class="portfolio__data">
+                <h3 class="portfolio__title">Protocols & Internet – DNS & TCP Analysis</h3>
+                <p class="portfolio__description">Configured DNS servers and analyzed TCP protocol behavior using Wireshark.</p>
+                <a href="https://github.com/SalyMasri/Protocols-and-Principles-of-the-Internet" class="button button--flex button--small portfolio__button">
+                    View Code <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 
             <!-- add arrows-->
             <div class="swiper-button-next">
@@ -581,217 +640,151 @@
         </section>
 
         <!--==================== PROJECT IN MIND ====================-->
-        <section class="project section">
-
-            <div class="project__bg">
-                <div class="project__container container grid">
-                    <div class="project__data">
-                        <h2 class="project__title">You have a new project?</h2>
-                        <p class="project__description">Contact me now and get discounts on your Web development projects.</p>
-                        <a href="#contact" class="button button--flex button--white">Contact me
-                            <i class="uil uil-message project__icon button__icon"></i>
+        <section class="contact section">
+            <div class="contact__bg">
+                <div class="contact__container container grid">
+                    <div class="contact__data">
+                        <h2 class="contact__title">Want to get in touch?</h2>
+                        <p class="contact__description">
+                            Feel free to reach out to me for collaboration, discussions, or just to connect!
+                        </p>
+                        <a href="#contact" class="button button--flex button--white">Contact Me
+                            <i class="uil uil-message contact__icon button__icon"></i>
                         </a>
-                       
                     </div>
-                    <!-- <img src="assets/img/project.png" alt="" class="project__img"> -->
+                    <!-- <img src="assets/img/contact.png" alt="" class="contact__img"> -->
                 </div>
             </div>
-
         </section>
+        
 
-        <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section">
-
-            <h2 class="section__title">Testimonials</h2>
-            <span class="section__subtitle">My client saying</span>
-
-            <div class="testimonial__container container swiper-container">
-                <div class="swiper-wrapper">
-                <!--==================== TESTIMONIAL 1 ====================-->
-                    <div class="testimonial__content swiper-slide">
-                        <div class="testimonial__data">
-                            <div class="testimonial__header">
-                                <img src="./packages/images/arun.PNG" alt="" class="testimonial__img">
-                                
-                                <div>
-                                    <h3 class="testimonial__name">Arun Prashanth</h3>
-                                    <span class="testimonial__client">Client</span>
-                                </div>
-                            </div>
-                            <div>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                            </div>
-                        </div>
-
-                        <p class="testimonial__description">I get a good impression, I carry out my project with all the 
-                            possible quality and attention and support 24 hours a day.
-                        </p>
-                    </div>
-                    <!--==================== TESTIMONIAL 2 ====================-->
-                    <div class="testimonial__content swiper-slide">
-                        <div class="testimonial__data">
-                            <div class="testimonial__header">
-                                <img src="./packages/images/yuga.PNG" alt="" class="testimonial__img">
-                                
-                                <div>
-                                    <h3 class="testimonial__name">Yugadarshan</h3>
-                                    <span class="testimonial__client">Client</span>
-                                </div>
-                            </div>
-                            <div>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                            </div>
-                        </div>
-
-                        <p class="testimonial__description">I get a good impression, I carry out my project with all the 
-                            possible quality and attention and support 24 hours a day.
-                        </p>
-                    </div>
-                    <!--==================== TESTIMONIAL 3 ====================-->
-                    <div class="testimonial__content swiper-slide">
-                        <div class="testimonial__data">
-                            <div class="testimonial__header">
-                                <img src="./packages/images/shenan.PNG" alt="" class="testimonial__img">
-                                
-                                <div>
-                                    <h3 class="testimonial__name">Shenan Sachinthan</h3>
-                                    <span class="testimonial__client">Client</span>
-                                </div>
-                            </div>
-                            <div>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                            </div>
-                        </div>
-
-                        <p class="testimonial__description">I get a good impression, I carry out my project with all the 
-                            possible quality and attention and support 24 hours a day.</p>
-                    </div>      
-                </div>
-
-                <!--Add pagination-->
-                <div class="swiper-pagination swiper-pagination-testimonial"></div>
-            </div>
-            </section>
+        
 
         <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact me</h2>
-            <span class="section__subtitle">Get in touch</span>
+<section class="contact section" id="contact">
+    <h2 class="section__title">Contact Me</h2>
+    <span class="section__subtitle">Get in touch</span>
 
-            <div class="contact__container container grid">
+    <div class="contact__container container grid">
+        <div>
+            <div class="contact__information">
+                <i class="uil uil-phone-alt contact__icon"></i>
                 <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone-alt contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Call me</h3>
-                            <span class="contatc__subtitle">(+94) 755422421</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">E-mail</h3>
-                            <span class="contatc__subtitle">Prashanna01@gmail.com</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contatc__subtitle">Kandy, Sri Lanka</span>
-                        </div>
-                    </div>
+                    <h3 class="contact__title">Call Me</h3>
+                    <span class="contact__subtitle"><a href="tel:+46760264578">+46 760 264 578</a></span>
                 </div>
-
-                <form action="" class="contact__form grid">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="" class="contact__label">E-mail</label>
-                            <input type="email" class="contact__input">
-                        </div>
-                    </div>
-
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Subject</label>
-                        <input type="text" class="contact__input">
-                    </div>
-
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Description</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                    </div>
-
-                    <div>
-                        <a href="#" class="button button--flex">
-                            Send message
-                            <i class="uil uil-message button__icon"></i>
-                        </a>
-                    </div>
-                </form>
             </div>
 
-        </section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-
-        <div class="footer__bg">
-            <div class="footer__container container grid">
+            <div class="contact__information">
+                <i class="uil uil-envelope contact__icon"></i>
                 <div>
-                    <h1 class="footer__title">Prashanna Sathiyamoorthy</h1>
-                    <span class="footer__subtitle">Data Analyst</span>
-                </div>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="#services" class="footer__link">Services</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer__link">Contact</a>
-                    </li>
-                </ul>
-
-                <div class="footer__socials">
-                    <a href=https://www.facebook.com/prashanna.drashan" target="_blank" class="footer__social">
-                        <i class="uil uil-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/prashanna01/" target="_blank" class="footer__social">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com/prashanna01" target="_blank" class="footer__social">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
+                    <h3 class="contact__title">E-mail</h3>
+                    <span class="contact__subtitle">
+                        <a href="mailto:sally.masre.246@gmail.com">sally.masre.246@gmail.com</a>
+                    </span>
                 </div>
             </div>
-            <p class="footer__copy">&#169; Ratheshan03. All rights reserved.</p>
+
+            <div class="contact__information">
+                <i class="uil uil-github contact__icon"></i>
+                <div>
+                    <h3 class="contact__title">GitHub</h3>
+                    <span class="contact__subtitle">
+                        <a href="https://github.com/SalyMasri" target="_blank">github.com/SalyMasri</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact__information">
+                <i class="uil uil-linkedin contact__icon"></i>
+                <div>
+                    <h3 class="contact__title">LinkedIn</h3>
+                    <span class="contact__subtitle">
+                        <a href="https://www.linkedin.com/in/saly-masri" target="_blank">linkedin.com/in/saly-masri</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact__information">
+                <i class="uil uil-discord contact__icon"></i>
+                <div>
+                    <h3 class="contact__title">Discord</h3>
+                    <span class="contact__subtitle">
+                        <a href="https://discord.com/users/saly6260" target="_blank">discord.com/users/saly6260</a>
+                    </span>
+                </div>
+            </div>
         </div>
-    </footer>
+
+        <!-- Contact Form -->
+        <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+                <div class="contact__content">
+                    <label for="name" class="contact__label">Name</label>
+                    <input type="text" id="name" class="contact__input" required>
+                </div>
+
+                <div class="contact__content">
+                    <label for="email" class="contact__label">E-mail</label>
+                    <input type="email" id="email" class="contact__input" required>
+                </div>
+            </div>
+
+            <div class="contact__content">
+                <label for="subject" class="contact__label">Subject</label>
+                <input type="text" id="subject" class="contact__input">
+            </div>
+
+            <div class="contact__content">
+                <label for="message" class="contact__label">Message</label>
+                <textarea id="message" cols="0" rows="7" class="contact__input" required></textarea>
+            </div>
+
+            <div>
+                <button type="submit" class="button button--flex">
+                    Send Message
+                    <i class="uil uil-message button__icon"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+    </main>
+<!--==================== FOOTER ====================-->
+<footer class="footer">
+    <div class="footer__bg">
+        <div class="footer__container container grid">
+            <div>
+                <h1 class="footer__title">Saly Masri</h1>
+                <span class="footer__subtitle">Computer Engineer</span>
+            </div>
+
+            <ul class="footer__links">
+                <li>
+                    <a href="#services" class="footer__link">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="footer__link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="https://www.linkedin.com/in/saly-masri" target="_blank" class="footer__social">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+                <a href="https://discord.com/users/saly6260" target="_blank" class="footer__social">
+                    <i class="uil uil-discord"></i>
+                </a>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; 2024 Saly Masri. All rights reserved.</p>
+    </div>
+</footer>
+
 
     <!--==================== SCROLL TOP ====================-->
     <a href="#" class="scrollup" id="scroll-up">

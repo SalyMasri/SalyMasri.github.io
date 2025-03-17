@@ -534,7 +534,7 @@ img {
 .skills__open .skills__arrow {
   transform: rotate(-180deg);
 }
-
+/*==================== QUALIFICATION ====================*/
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs {
   display: flex;
@@ -561,41 +561,48 @@ img {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
+  align-items: center;
+  position: relative; /* Ensure child elements position relative to it */
 }
 
-.qualification__title {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
+/* Align left and right sections properly */
+.qualification__data > div:first-child {
+  text-align: right;
 }
 
-.qualification__subtitle {
-  display: inline-block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
+.qualification__data > div:last-child {
+  text-align: left;
 }
 
-.qualification__calendar {
-  font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
-  /* margin-bottom: var(--mb-1) */
-}
-
+/* Blue timeline point */
 .qualification__rounder {
   display: inline-block;
   width: 13px;
   height: 13px;
   background-color: var(--first-color);
   border-radius: 50%;
+  position: relative;
+  z-index: 1; /* Ensures it's above the line */
 }
 
+/* Vertical timeline line */
 .qualification__line {
   display: block;
-  width: 1px;
+  width: 2px;
   height: 100%;
   background-color: var(--first-color);
-  transform: translate(6px, -7px);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
 }
 
+/* Fix: Remove line from last qualification item */
+.qualification__data:last-child .qualification__line {
+  display: none;
+}
+
+/* Hide inactive qualification content */
 .qualification__content[data-content] {
   display: none;
 }
@@ -608,13 +615,44 @@ img {
   color: var(--first-color);
 }
 
-/*==================== QUALIFICATIONS ====================*/
-.qualifications__container {
+
+/*==================== SERVICES ====================*/
+.services__container {
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
 }
 
-.qualifications__content {
+/* Services Tabs (Work & Education) */
+.services__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.services__button {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--container-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.services__button:hover {
+  background-color: var(--first-color-lighter);
+}
+
+.services__button.services__active {
+  background-color: var(--first-color);
+  color: white;
+}
+
+
+
+/* Services Content (Work & Education Details) */
+.services__content {
+  display: none;
   position: relative;
   background-color: var(--container-color);
   padding: 3.5rem 0.5rem 1.25rem 1.5rem;
@@ -623,33 +661,78 @@ img {
   transition: 0.3s;
 }
 
-.qualifications__content:hover {
+.services__content:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.qualifications__icon {
+.services__active {
   display: block;
-  font-size: 1.5rem;
+}
+
+/* Services Icons & Titles */
+.services__icon {
+  font-size: 2rem;
   color: var(--first-color);
-  margin-bottom: var(--mb-1);
+  margin-bottom: 1rem;
 }
-
-.qualifications__title {
+.services__title {
   font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
+  margin-bottom: 0.5rem;
 }
 
-.qualifications__button {
+/* Style for the collapsible summary in education */
+.services__summary {
+  font-weight: bold;
   cursor: pointer;
+  margin-top: 1rem;
+}
+
+.services__summary:hover {
+  color: var(--first-color);
+}
+
+/* List of courses */
+.services__list {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
   font-size: var(--small-font-size);
+  line-height: 1.5;
 }
 
-.qualifications__button:hover .button__icon {
-  transform: translateX(0.25rem);
+.services__list li {
+  list-style: disc;
+  margin-bottom: 0.3rem;
 }
 
-.qualifications__modal {
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Individual Experience Cards */
+.services__card {
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.services__card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Active Modal (Legacy Support) */
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal Styles (Not in Use Anymore but Kept for Reference) */
+.services__modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -666,28 +749,28 @@ img {
   transition: 0.3s;
 }
 
-.qualifications__modal-content {
+.services__modal-content {
   position: relative;
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
 
-.qualifications__modal-qualifications {
+.services__modal-services {
   row-gap: 1rem;
 }
 
-.qualifications__modal-qualification {
+.services__modal-service {
   display: flex;
 }
 
-.qualifications__modal-title {
+.services__modal-title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
 }
 
-.qualifications__modal-close {
+.services__modal-close {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -696,16 +779,10 @@ img {
   cursor: pointer;
 }
 
-.qualifications__modal-icon {
+.services__modal-icon {
   color: var(--first-color);
   margin-right: var(--mb-0-25);
-}
 
-
-/* Active Modal */
-.active-modal {
-  opacity: 1;
-  visibility: visible;
 }
 
 /*==================== PORTFOLIO ====================*/
