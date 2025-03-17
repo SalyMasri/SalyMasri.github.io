@@ -67,11 +67,11 @@ tabs.forEach((tab) => {
     tab.classList.add("qualification__active");
   });
 });
+/*==================== QUALIFICATIONS MODAL ====================*/
+const modalViews = document.querySelectorAll(".qualifications__modal"),
+  modalBtns = document.querySelectorAll(".qualifications__button"),
+  modalCloses = document.querySelectorAll(".qualifications__modal-close");
 
-/*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll(".services__modal"),
-  modalBtns = document.querySelectorAll(".services__button"),
-  modalCloses = document.querySelectorAll(".services__modal-close");
 
 let modal = function (modalClick) {
   modalViews[modalClick].classList.add("active-modal");
