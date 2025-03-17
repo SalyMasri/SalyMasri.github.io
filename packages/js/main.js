@@ -206,3 +206,15 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+/*==================== FORCE DOWNLOAD CV ====================*/
+document.querySelector(".about__buttons a").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevents default link behavior
+    const link = document.createElement("a");
+    link.href = "packages/CVAT.pdf"; // Ensure this is the correct file path
+    link.download = "CVAT.pdf"; // Forces download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+
