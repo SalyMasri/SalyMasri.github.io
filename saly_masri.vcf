@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Masri;Saly;;;
+FN:Saly Masri
+EMAIL;TYPE=INTERNET,PREF:sally.masre.246@gmail.com
+TEL;TYPE=CELL,VOICE:+46 76 026 45 78
+URL;TYPE=Website:https://salymasri.github.io/
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/saly-masri
+URL;TYPE=GitHub:https://github.com/SalyMasri
+URL;TYPE=CV:https://salymasri.github.io/cv.pdf
+NOTE:Full links page: https://salymasri.github.io/links.html
+END:VCARD
